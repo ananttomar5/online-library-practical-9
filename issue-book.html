@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Campus online library project">
+  <title>Issue a Book | PageTurn Library</title><link rel="stylesheet" href="css/style.css">
+  <script src="js/app.js" defer></script>
+</head>
+<body data-page="issue">
+  <div id="siteHeader"></div>
+  <main>
+<section class="page-intro"><p class="eyebrow">BORROW A BOOK</p><h1>Issue a book</h1><p>Fill in the form to add a book to your personal reading list.</p></section>
+<section class="section narrow"><form id="issueForm" class="form-card">
+  <label>Your name<input name="studentName" required minlength="2" placeholder="Enter your name"></label>
+  <label>Student / Roll number<input name="studentId" required placeholder="Enter your roll number"></label>
+  <label>Select a book<select name="bookId" id="issueBookSelect" required><option value="">Choose a book</option></select></label>
+  <label>Issue date<input name="issueDate" id="issueDate" type="date" required></label>
+  <label>Due date<input name="dueDate" id="dueDate" type="date" required></label>
+  <button class="btn" type="submit">Issue book</button><p id="issueMessage" class="form-message" role="status"></p>
+  <p class="hint">Demo project: this form stores information in your browser using LocalStorage. It does not connect to a real library system.</p>
+</form></section>
+</main>
+  <div id="siteFooter"></div>
+</body>
+</html>
